@@ -5,7 +5,7 @@
 ## 📌 Deskripsi Proyek
 Memorize Quran adalah aplikasi Android yang membantu pengguna dalam menghafal Al-Qur'an dengan tampilan yang interaktif dan fitur yang mempermudah akses ke ayat-ayat suci. Proyek ini masih dalam tahap pengembangan dan akan terus diperbarui dengan fitur-fitur baru.
 
-<img src="https://github.com/nabilaakhairunnisa/memorizealquran/blob/master/ui.png"
+<img src="https://github.com/nabilaakhairunnisa/memorizealquran/blob/master/UI.png"
      alt="UI"
      style="float: left; margin-right: 10px;"
      width="200" /> 
