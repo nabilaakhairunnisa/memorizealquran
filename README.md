@@ -8,7 +8,7 @@ Memorize Quran adalah aplikasi Android yang membantu pengguna dalam menghafal Al
 <img src="https://github.com/nabilaakhairunnisa/memorizealquran/blob/master/UI.png"
      alt="UI"
      style="float: left; margin-right: 10px;"
-     width="200" /> 
+     width="600" /> 
 
 ## ✅ Fitur yang sudah selesai:
 - Mengambil data surat dan detail surat dari API.
