@@ -27,6 +27,11 @@
                 android:resource="@xml/quran_widget_info" />
         </receiver>
 
+        <service
+            android:name=".ui.widget.QuranWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS"
+            android:exported="false"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true"

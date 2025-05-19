@@ -1,4 +1,4 @@
-package com.nabila.memorizealquran.data.remote.data
+package com.nabila.memorizealquran.data.remote.model
 
 data class DetailSurah(
     val nomor: Int,

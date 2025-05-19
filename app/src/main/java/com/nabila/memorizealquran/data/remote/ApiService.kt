@@ -1,7 +1,7 @@
 package com.nabila.memorizealquran.data.remote
 
-import com.nabila.memorizealquran.data.remote.data.DetailSurahResponse
-import com.nabila.memorizealquran.data.remote.data.SurahResponse
+import com.nabila.memorizealquran.data.remote.model.DetailSurahResponse
+import com.nabila.memorizealquran.data.remote.model.SurahResponse
 import retrofit2.http.GET
 import retrofit2.http.Path
 

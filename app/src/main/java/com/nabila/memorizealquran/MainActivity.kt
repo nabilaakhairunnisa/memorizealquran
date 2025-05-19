@@ -11,8 +11,6 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.Button
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -26,11 +24,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.kanyidev.searchable_dropdown.SearchableExpandedDropDownMenuMaterial3
-import com.nabila.memorizealquran.data.remote.data.Ayat
-import com.nabila.memorizealquran.data.remote.data.Surah
+import com.nabila.memorizealquran.data.local.entity.AyatEntity
+import com.nabila.memorizealquran.data.remote.model.Surah
 import com.nabila.memorizealquran.ui.theme.MemorizealquranTheme
 import com.nabila.memorizealquran.ui.theme.grey
-import com.nabila.memorizealquran.ui.viewmodel.AddNewWidgetViewModel
+import com.nabila.memorizealquran.ui.viewmodel.MyViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -63,30 +61,22 @@ class MainActivity : ComponentActivity() {
 fun AddNewWidget(
     context: Context,
     modifier: Modifier = Modifier,
-    viewModel: AddNewWidgetViewModel = hiltViewModel()
+    viewModel: MyViewModel = hiltViewModel()
 ) {
-    val surahList by viewModel.surahList.collectAsState()
-    val detailSurah by viewModel.detailSurah.collectAsState()
-    val selectedSurah = remember { mutableStateOf<Surah?>(null) }
-    val jumlahAyat = selectedSurah.value?.jumlahAyat ?: 0
-    val ayatList = (1..jumlahAyat).map { it.toString() }
-    val ayatAwal = remember { mutableStateOf("") }
-    val ayatAkhir = remember { mutableStateOf("") }
-    val awal = ayatAwal.value.toIntOrNull() ?: 1
-    val akhir = ayatAkhir.value.toIntOrNull() ?: awal
+    val surahList by viewModel.surahList.collectAsState() //display surah list
+    val detailSurah by viewModel.detailSurah.collectAsState() //data for display detail surah
+    val selectedSurah = remember { mutableStateOf<Surah?>(null) } //save the selected surah
+    val jumlahAyat = selectedSurah.value?.jumlahAyat ?: 0 //data for total ayat
+    val ayatList = (1..jumlahAyat).map { it.toString() } //data for display number of ayat
+    val ayatAwal = remember { mutableStateOf("") } //for save selected first ayat
+    val ayatAkhir = remember { mutableStateOf("") } //for save selected last ayat
+    val awal = ayatAwal.value.toIntOrNull() ?: 1 //convert selected first ayat to int
+    val akhir = ayatAkhir.value.toIntOrNull() ?: awal //convert selected last ayat to int
+
+    //data for display selected ayat in lazy column
     val listAyat = detailSurah?.ayat?.filter {
         it.nomorAyat in awal..akhir
     } ?: emptyList()
-
-    val ayatDataList = remember(detailSurah) {
-        detailSurah?.ayat?.map {
-            Ayat(
-                nomorAyat = it.nomorAyat,
-                teksArab = it.teksArab,
-                teksIndonesia = it.teksIndonesia
-            )
-        } ?: emptyList()
-    }
 
     Box(modifier) {
         Column {
@@ -122,17 +112,21 @@ fun AddNewWidget(
             }
             Button(
                 onClick = {
+                    //this object will used to call function saveListAyat from view model
+                    val listAyatEntity = listAyat.map { selectedAyat ->
+                        //convert selected list ayat to AyatEntity
+                        AyatEntity(
+                            nomorAyat = selectedAyat.nomorAyat,
+                            teksArab = selectedAyat.teksArab,
+                            teksIndonesia = selectedAyat.teksIndonesia
+                        )
+                    }
 
+                    viewModel.saveListAyat(listAyatEntity)
                 },
                 modifier = Modifier.fillMaxWidth().padding(vertical = 5.dp)
             ) {
-                Text("Tambah Widget")
-            }
-            LazyColumn {
-                items(listAyat) { item ->
-                    Text(item.teksArab)
-                    Text(item.teksIndonesia)
-                }
+                Text("Save Ayat for Widget")
             }
         }
     }
@@ -158,6 +152,6 @@ fun MyDropDown(
 fun GreyText(text: String, modifier: Modifier) {
     Text(
         text, color = grey, modifier = modifier.padding(
-        horizontal = 10.dp,
-        vertical = 5.dp))
+            horizontal = 10.dp,
+            vertical = 5.dp))
 }

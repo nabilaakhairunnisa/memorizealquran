@@ -1,17 +1,8 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.MemorizeQuran.AppWidget.Container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:theme="@style/Theme.MemorizeQuran.AppWidgetContainer"
     android:orientation="vertical"
-    android:padding="8dp">
-    <TextView
-        android:id="@+id/surah_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nama Surah"
-        android:textSize="18sp"/>
-    <ListView
-        android:id="@+id/ayat_list"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-</LinearLayout>
+    android:id="@+id/ayatList">
+</ListView>

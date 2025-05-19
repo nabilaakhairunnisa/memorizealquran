@@ -1,9 +1,10 @@
 package com.nabila.memorizealquran.data
 
 import com.nabila.memorizealquran.data.local.SurahDao
-import com.nabila.memorizealquran.data.remote.data.DetailSurah
+import com.nabila.memorizealquran.data.local.entity.AyatEntity
+import com.nabila.memorizealquran.data.remote.model.DetailSurah
 import com.nabila.memorizealquran.data.remote.ApiService
-import com.nabila.memorizealquran.data.remote.data.Surah
+import com.nabila.memorizealquran.data.remote.model.Surah
 import javax.inject.Inject
 
 class SurahRepository @Inject constructor (
@@ -16,19 +17,16 @@ class SurahRepository @Inject constructor (
         return response.data
     }
 
-//    suspend fun getAllSurah(): List<Surah> {
-//        val localData = surahDao.getAllSurah()
-//        return if (localData != null) {
-//            localData
-//        } else {
-//            val remoteData = apiService.getAllSurah().data
-//            surahDao.insertAll(remoteData)
-//            remoteData
-//        }
-//    }
-
     suspend fun getDetailSurah(nomor:Int): DetailSurah {
         val response = apiService.getDetailSurah(nomor)
         return response.data
+    }
+
+    suspend fun saveListAyat(listAyat: List<AyatEntity>) {
+        surahDao.saveListAyat(listAyat)
+    }
+
+    suspend fun getListAyat(): List<AyatEntity> {
+        return surahDao.getAyatList()
     }
 }
