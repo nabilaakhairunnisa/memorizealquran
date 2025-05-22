@@ -1,6 +1,6 @@
 # 📖 MemorizeQuran
 
-Aplikasi Android untuk membantu menghafal Al-Qur'an secara interaktif dan praktis. Dibuat dengan Android Studio menggunakan Jetpack Compose dan Room Database.
+Aplikasi ini bertujuan untuk memudahkan para penghafal Al-Qur'an mengakses ayat dengan cepat melalui widget. Dibuat dengan Android Studio menggunakan Jetpack Compose dan Room Database.
 
 Status: 🚧 Dalam Pengembangan
 
