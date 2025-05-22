@@ -7,7 +7,8 @@ Status: 🚧 Dalam Pengembangan
 ## ✨ Fitur Utama
 
 - Menampilkan daftar surat dari API: https://equran.id/apidev/v2
-- Pilih surat dan ayat ke lokal
+- Cari surat dan ayat
+- Simpan surat dan ayat ke lokal
 - Widget homescreen untuk akses cepat ayat yang ingin dihafal
 - Otomatis perbarui data widget setiap user klik 'Simpan Ayat'
 
