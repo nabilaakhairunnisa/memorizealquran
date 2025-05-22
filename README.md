@@ -4,6 +4,10 @@ Aplikasi Android untuk membantu menghafal Al-Qur'an secara interaktif dan prakti
 
 Status: 🚧 Dalam Pengembangan
 
+## Link Aplikasi
+
+Anda dapat mencoba aplikasi ini dengan cara mendownloadnya [di sini](https://github.com/nabilaakhairunnisa/memorizealquran/edit/master/app-debug.apk) dan menginstalnya secara manual
+
 ## ✨ Fitur Utama
 
 - Menampilkan daftar surat dari API: https://equran.id/apidev/v2
