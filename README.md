@@ -4,6 +4,11 @@ Aplikasi Android untuk membantu menghafal Al-Qur'an secara interaktif dan prakti
 
 Status: 🚧 Dalam Pengembangan
 
+## 📷 Screenshot
+
+<img src="https://github.com/nabilaakhairunnisa/memorizealquran/blob/master/ui.png"
+     alt="App UI" />
+     
 ## Link Aplikasi
 
 Anda dapat mencoba aplikasi ini dengan cara mendownloadnya [di sini](https://github.com/nabilaakhairunnisa/memorizealquran/blob/master/app-debug.apk) dan menginstalnya secara manual
@@ -24,13 +29,6 @@ Anda dapat mencoba aplikasi ini dengan cara mendownloadnya [di sini](https://git
 - Room (Database lokal)
 - Retrofit (API)
 - App Widget
-
-## 📷 Screenshot
-
-<img src="https://github.com/nabilaakhairunnisa/memorizealquran/blob/master/ui.png"
-     alt="App UI"
-     style="float: left; margin-right: 10px;"
-     width="2000" />
 
 ## 🚀 Kontribusi
 
