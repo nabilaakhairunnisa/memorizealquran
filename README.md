@@ -23,7 +23,10 @@ Status: 🚧 Dalam Pengembangan
 
 ## 📷 Screenshot
 
-> *(Tambahkan gambar di sini jika ada)*
+<img src="https://github.com/nabilaakhairunnisa/memorizealquran/blob/master/ui.png"
+     alt="App UI"
+     style="float: left; margin-right: 10px;"
+     width="2000" />
 
 ## 🚀 Kontribusi
 
