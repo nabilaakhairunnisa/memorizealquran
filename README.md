@@ -7,19 +7,7 @@ Status: 🚧 Under Development
 ## 📷 APP UI
 
 <img src="https://github.com/nabilaakhairunnisa/memorizealquran/blob/master/ui.png"
-     alt="App UI" />
-     
-## 📲 Application Link
-
-You can try the application by downloading the APK [here](https://raw.githubusercontent.com/nabilaakhairunnisa/memorizealquran/master/memorizequran-v1.apk) and installing it manually.  
-
-### 🔧 Installation Tutorial
-
-1. Download the APK file from this link: [memorizequran-v1.apk](https://github.com/nabilaakhairunnisa/memorizealquran/blob/master/memorizequran-v1.apk).  
-2. Open the downloaded file on your Android device.  
-3. If prompted, allow installation from **Unknown Sources** (you can enable this in **Settings > Security > Install unknown apps**).  
-4. Tap **Install** and wait until the process is complete.  
-5. Once installed, open the **MemorizeQuran** app and start using it.  
+     alt="App UI" /> 
 
 ## ✨ Main Features
 
