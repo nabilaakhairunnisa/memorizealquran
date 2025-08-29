@@ -1,45 +1,53 @@
-# 📖 MemorizeQuran
+# 📖 Memorize Qur'an
 
-Aplikasi ini bertujuan untuk memudahkan para penghafal Al-Qur'an mengakses ayat dengan cepat melalui widget. Dibuat dengan Android Studio menggunakan Jetpack Compose dan Room Database.
+This application is designed to help Qur’an memorizers access verses quickly through a widget. Built with Android Studio using Jetpack Compose and Room Database.
 
-Status: 🚧 Dalam Pengembangan
+Status: 🚧 Under Development
 
-## 📷 Screenshot
+## 📷 APP UI
 
 <img src="https://github.com/nabilaakhairunnisa/memorizealquran/blob/master/ui.png"
      alt="App UI" />
      
-## Link Aplikasi
+## 📲 Application Link
 
-Anda dapat mencoba aplikasi ini dengan cara mendownloadnya [di sini](https://github.com/nabilaakhairunnisa/memorizealquran/blob/master/app-debug.apk) dan menginstalnya secara manual
+You can try the application by downloading the APK [here](https://github.com/nabilaakhairunnisa/memorizealquran/blob/master/memorizequran-v1.apk) and installing it manually.  
 
-## ✨ Fitur Utama
+### 🔧 Installation Tutorial
 
-- Menampilkan daftar surat dari API: https://equran.id/apidev/v2
-- Cari surat dan ayat
-- Simpan surat dan ayat ke lokal
-- Widget homescreen untuk akses cepat ayat yang ingin dihafal
-- Otomatis perbarui data widget setiap user klik 'Simpan Ayat'
+1. Download the APK file from this link: [memorizequran-v1.apk](https://github.com/nabilaakhairunnisa/memorizealquran/blob/master/memorizequran-v1.apk).  
+2. Open the downloaded file on your Android device.  
+3. If prompted, allow installation from **Unknown Sources** (you can enable this in **Settings > Security > Install unknown apps**).  
+4. Tap **Install** and wait until the process is complete.  
+5. Once installed, open the **MemorizeQuran** app and start using it.  
 
-## 🛠️ Teknologi yang Digunakan
+## ✨ Main Features
 
-- Kotlin
-- Jetpack Compose
-- Hilt (Dependency Injection)
-- Room (Database lokal)
-- Retrofit (API)
-- App Widget
+- Display list of surahs from API: https://equran.id/apidev/v2  
+- Search surahs and verses  
+- Save surahs and verses locally  
+- Homescreen widget for quick access to verses you want to memorize  
+- Automatically updates widget data whenever the user clicks 'Save Verse'  
 
-## 🚀 Kontribusi
+## 🛠️ Technologies Used
 
-1. Clone repositori ini:
+- Kotlin  
+- Jetpack Compose  
+- Hilt (Dependency Injection)  
+- Room (Local Database)  
+- Retrofit (API)  
+- App Widget  
+
+## 🚀 Contribution
+
+1. Clone this repository:
    ```bash
    git clone https://github.com/nabilaakhairunnisa/memorizealquran.git
-2. Buat branch untuk fitur baru:
+2. Create a new branch for your feature:
    ```bash
-   git checkout -b nama-fitur-baru
-3. Lakukan perubahan dan commit:
+   git checkout -b new-feature-name
+3. Make changes and commit:
    ```bash
    git add .
-   git commit -m "Menambahkan fitur baru"
-4. Push ke GitHub dan buat Pull Request.
+   git commit -m "Add new feature"
+4. Push to GitHub and create a Pull Request.
