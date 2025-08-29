@@ -11,7 +11,7 @@ Status: 🚧 Under Development
      
 ## 📲 Application Link
 
-You can try the application by downloading the APK [here](https://github.com/nabilaakhairunnisa/memorizealquran/blob/master/memorizequran-v1.apk) and installing it manually.  
+You can try the application by downloading the APK [here](https://raw.githubusercontent.com/nabilaakhairunnisa/memorizealquran/master/memorizequran-v1.apk) and installing it manually.  
 
 ### 🔧 Installation Tutorial
 
