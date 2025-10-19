@@ -69,16 +69,16 @@ fun MainActivity(
     modifier: Modifier = Modifier,
     viewModel: MyViewModel = hiltViewModel()
 ) {
-    val surahList by viewModel.surahList.collectAsState() //display surah list
-    val detailSurah by viewModel.detailSurah.collectAsState() //data for display detail surah
-    val toastMessage by viewModel.toastMessage.collectAsState() //get message
-    val selectedSurah = remember { mutableStateOf<SurahEntity?>(null) } //save the selected surah
-    val jumlahAyat = selectedSurah.value?.jumlahAyat ?: 0 //data for total ayat
-    val ayatList = (1..jumlahAyat).map { it.toString() } //data for display number of ayat
-    val ayatAwal = remember { mutableStateOf("") } //for save selected first ayat
-    val ayatAkhir = remember { mutableStateOf("") } //for save selected last ayat
-    val awal = ayatAwal.value.toIntOrNull() ?: 1 //convert selected first ayat to int
-    val akhir = ayatAkhir.value.toIntOrNull() ?: awal //convert selected last ayat to int
+    val surahList by viewModel.surahList.collectAsState()
+    val detailSurah by viewModel.detailSurah.collectAsState()
+    val toastMessage by viewModel.toastMessage.collectAsState()
+    val selectedSurah = remember { mutableStateOf<SurahEntity?>(null) }
+    val jumlahAyat = selectedSurah.value?.jumlahAyat ?: 0
+    val ayatList = (1..jumlahAyat).map { it.toString() }
+    val ayatAwal = remember { mutableStateOf("") }
+    val ayatAkhir = remember { mutableStateOf("") }
+    val awal = ayatAwal.value.toIntOrNull() ?: 1
+    val akhir = ayatAkhir.value.toIntOrNull() ?: awal
 
     //data for display selected ayat in lazy column
     val listAyat = detailSurah?.ayat?.filter {
@@ -143,9 +143,7 @@ fun MainActivity(
             }
             Button(
                 onClick = {
-                    //this object will used to call function saveListAyat from view model
                     val listAyatEntity = listAyat.map { selectedAyat ->
-                        //convert selected list ayat to AyatEntity
                         AyatEntity(
                             nomorAyat = selectedAyat.nomorAyat,
                             teksArab = selectedAyat.teksArab,

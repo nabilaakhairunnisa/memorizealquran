@@ -15,9 +15,6 @@ interface SurahDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun saveAllSurah(surahList: List<SurahEntity>)
 
-//    @Insert(onConflict = OnConflictStrategy.REPLACE)
-//    suspend fun saveDetailSurah(detailSurah: DetailSurahEntity)
-
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun saveListAyat(listAyat: List<AyatEntity>)
 
