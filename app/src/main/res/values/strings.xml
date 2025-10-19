@@ -1,4 +1,11 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">Memorize Quran</string>
     <string name="app_widget_description">Display Quran verses into widget</string>
+=======
+    <string name="app_name">MemorizeQuran</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+>>>>>>> b74a0f0127fa7fc1259f3b5fca560bb96879355c
 </resources>
