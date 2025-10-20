@@ -6,7 +6,7 @@ Status: 🚧 Under Development
 
 ## 📷 APP UI
 
-<img src="https://github.com/nabilaakhairunnisa/memorizealquran/blob/master/ui.png"
+<img src="https://github.com/nabilaakhairunnisa/memorizealquran/blob/main/ui.png"
      alt="App UI" /> 
 
 ## ✨ Main Features
