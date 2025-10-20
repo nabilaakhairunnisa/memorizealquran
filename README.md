@@ -2,12 +2,14 @@
 
 This application is designed to help Qur’an memorizers access verses quickly through a widget. Built with Android Studio using Jetpack Compose and Room Database.
 
-Status: 🚧 Under Development
-
 ## 📷 APP UI
 
 <img src="https://github.com/nabilaakhairunnisa/memorizealquran/blob/main/ui.png"
      alt="App UI" /> 
+
+## Demo
+[see Demo on YouTube](https://youtube.com/shorts/1QBjmekebnU)
+
 
 ## ✨ Main Features
 
