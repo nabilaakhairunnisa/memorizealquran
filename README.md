@@ -27,7 +27,7 @@ Status: 🚧 Under Development
 - App Widget
 
 ## How to Install the APK
-1. Download the latest APK release from [this link](https://github.com/nabilaakhairunnisa/memorizequran/raw/refs/heads/main/MemorizeQuran.apk).
+1. Download the latest APK release from [this link](https://github.com/nabilaakhairunnisa/memorizealquran/raw/refs/heads/main/MemorizeQuran.apk).
 2. On your device, go to **Settings > Security** and enable **Install from Unknown Sources** (if not already enabled).
 3. Open the downloaded APK file.
 4. Tap **Install** and wait until the process is complete.
